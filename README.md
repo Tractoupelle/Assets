@@ -15,31 +15,31 @@
 
 ## AssetsType : 
 
-#### * ABSORPTION,
-#### * BLINDNESS,
-#### * CONFUSION,
-#### * DAMAGE_RESISTANCE,
-#### * FAST_DIGGING,
-#### * FIRE_RESISTANCE,
-#### * HARM,
-#### * HEAL,
-#### * HEALTH_BOOST,
-#### * HUNGER,
-#### * INCREASE_DAMAGE,
-#### * INVISIBILITY,
-#### * JUMP,
-#### * NIGHT_VISION,
-#### * POISON,
-#### * REGENERATION,
-#### * SATURATION,
-#### * SLOW,
-#### * SPEED,
-#### * SLOW_DIGGING,
-#### * WATER_BREATHING,
-#### * WEAKNESS,
-#### * WITHER;
-#### * NO_FALL,
-#### * NO_DEBUFF,
+#### * ABSORPTION
+#### * BLINDNESS
+#### * CONFUSION
+#### * DAMAGE_RESISTANCE
+#### * FAST_DIGGING
+#### * FIRE_RESISTANCE
+#### * HARM
+#### * HEAL
+#### * HEALTH_BOOST
+#### * HUNGER
+#### * INCREASE_DAMAGE
+#### * INVISIBILITY
+#### * JUMP
+#### * NIGHT_VISION
+#### * POISON
+#### * REGENERATION
+#### * SATURATION
+#### * SLOW
+#### * SPEED
+#### * SLOW_DIGGING
+#### * WATER_BREATHING
+#### * WEAKNESS
+#### * WITHER
+#### * NO_FALL
+#### * NO_DEBUFF
 
 ## Hoping that you like the plugin
 
