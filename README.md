@@ -14,3 +14,5 @@
 #### * /assetsadmin remove <player> <asset> : Remove asset to the player
 
 **Hoping that you like the plugin**
+
+<a id="raw-url" href="https://github.com/Tractoupelle/Assets/raw/master/Assets-0.0.1.jar">Download the PLUGIN</a>
