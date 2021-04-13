@@ -7,9 +7,9 @@ PREFIX: "§6Assets §f» §e"
 USAGE:  "Usage: /assets"
 USAGE-ADMIN:
   - "§6Assets §f» §e"
-  - " §f» §e/assets : §7Open assets GUI"
-  - " §f» §e/assets add <player> <asset> : §7Add an asset to player"
-  - " §f» §e/assets remove <player> <asset> : §7Remove an asset to player"
+  - " §f» §e/assetsadmin : §7Open assets GUI"
+  - " §f» §e/assetsadmin add <player> <asset> : §7Add an asset to player"
+  - " §f» §e/assetsadmin remove <player> <asset> : §7Remove an asset to player"
 NO-PERMISSION: "You don't have the permission."
 NOT-PLAYER: "Only player can execute this command."
 NOT-AN-ASSET: "This asset not exist."
@@ -17,6 +17,10 @@ UNKNOW-PLAYER: "This player does not exist or is not logged in."
 OPENING-GUI: "Opening of the assets menu..."
 ACTIVATE-ASSET: "§e§oLeft click to activate !"
 NOT-HAVE-ASSET: "§cYou don't have this asset !"
+ASSET-ACTIVATION: "You have just activated your asset !"
+ASSET-DESACTIVATION: "You have just deactivated your asset !"
+ALREADY-HAVE-ASSET: "This player already has this asset."
+ALREADY-NOT-HAVE-ASSET: "This player does not already have this advantage."
 
 ASSETS-GUI:
   INVENTORY-SIZE: 27
@@ -96,8 +100,7 @@ ASSETS-GUI:
         - "§6» %chooseLore%"
     4:
       MATERIAL: DIAMOND_CHESTPLATE
-      EFFECT: DAMAGE_
-      RESISTANCE
+      EFFECT: DAMAGE_RESISTANCE
       LEVEL: 1
       PERMISSION: asset.resistance.use
       GLOW: true

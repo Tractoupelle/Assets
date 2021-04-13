@@ -11,3 +11,6 @@ commands:
   assets:
     aliases: [atouts]
     description: Main command.
+  assetsadmin:
+    aliases: [atoutsadmin]
+    description: Main command.
