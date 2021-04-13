@@ -15,4 +15,4 @@
 
 **Hoping that you like the plugin**
 
-<a id="raw-url" href="https://raw.githubusercontent.com/github-username/project/master/Assets-0.0.1.jar">Download the PLUGIN</a>
+<a id="raw-url" href="https://github.com/Tractoupelle/Assets/raw/master/Assets-0.0.1.jar">Download the PLUGIN</a>
