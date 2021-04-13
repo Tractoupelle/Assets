@@ -1,5 +1,5 @@
 # Assets
-## _Simple Assets plugin fully configurablee_
+## _Simple Assets plugin fully configurable_
 
 # Developed by Tractopelle#4020
 
