@@ -1,11 +1,11 @@
 package fr.tractopelle.assets;
 
-import fr.tractopelle.assets.commands.AssetAdmin;
-import fr.tractopelle.assets.commands.AssetCommand;
+import fr.tractopelle.assets.commands.command.AssetAdmin;
+import fr.tractopelle.assets.commands.command.AssetCommand;
 import fr.tractopelle.assets.config.Config;
 import fr.tractopelle.assets.manager.AssetsManager;
 import fr.tractopelle.assets.gui.AssetsGUI;
-import fr.tractopelle.assets.listeners.AtoutsListener;
+import fr.tractopelle.assets.listeners.AssetsListener;
 import fr.tractopelle.assets.utils.Logger;
 import net.luckperms.api.LuckPerms;
 import org.bukkit.Bukkit;
@@ -73,7 +73,7 @@ public class CorePlugin extends JavaPlugin {
 
     private void registerListeners() {
         PluginManager pm = Bukkit.getPluginManager();
-        pm.registerEvents(new AtoutsListener(this), this);
+        pm.registerEvents(new AssetsListener(this), this);
 
     }
 

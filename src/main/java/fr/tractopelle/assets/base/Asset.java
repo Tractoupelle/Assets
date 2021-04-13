@@ -1,16 +1,16 @@
-package fr.tractopelle.assets.data;
+package fr.tractopelle.assets.base;
 
-import fr.tractopelle.assets.utils.AssetType;
+import fr.tractopelle.assets.base.type.AssetType;
 import org.bukkit.inventory.ItemStack;
 
-public class Assets {
+public class Asset {
 
     private String permission;
     private ItemStack itemStack;
     private AssetType assetType;
     private Integer level;
 
-    public Assets (ItemStack itemStack, AssetType assetType, Integer level, String permission) {
+    public Asset(ItemStack itemStack, AssetType assetType, Integer level, String permission) {
 
         this.itemStack = itemStack;
         this.assetType = assetType;

@@ -1,6 +1,4 @@
-package fr.tractopelle.assets.utils;
-
-import org.bukkit.entity.Player;
+package fr.tractopelle.assets.base.type;
 
 public enum AssetType {
 

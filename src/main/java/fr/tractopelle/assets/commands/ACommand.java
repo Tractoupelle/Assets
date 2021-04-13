@@ -1,4 +1,4 @@
-package fr.tractopelle.assets.utils.command;
+package fr.tractopelle.assets.commands;
 
 import fr.tractopelle.assets.CorePlugin;
 import org.bukkit.command.Command;

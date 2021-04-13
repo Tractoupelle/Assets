@@ -1,8 +1,8 @@
 package fr.tractopelle.assets.manager;
 
 import fr.tractopelle.assets.CorePlugin;
-import fr.tractopelle.assets.data.Assets;
-import fr.tractopelle.assets.utils.AssetType;
+import fr.tractopelle.assets.base.Asset;
+import fr.tractopelle.assets.base.type.AssetType;
 import fr.tractopelle.assets.utils.ItemBuilder;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -11,26 +11,26 @@ import java.util.*;
 public class AssetsManager {
 
     private CorePlugin corePlugin;
-    private List<Assets> assets = new ArrayList<>();
+    private List<Asset> assets = new ArrayList<>();
 
     public AssetsManager(CorePlugin corePlugin) {
         this.corePlugin = corePlugin;
         loadAssets();
     }
 
-    public List<Assets> getAtoutList() {
+    public List<Asset> getAtoutList() {
         return assets;
     }
 
     public void addAtoutList(AssetType atoutList, Integer level, ItemStack itemStack, String permission) {
 
-        this.assets.add(new Assets(itemStack, atoutList, level, permission));
+        this.assets.add(new Asset(itemStack, atoutList, level, permission));
 
     }
 
     public boolean isAssets(AssetType s){
 
-        for(Assets asset : assets){
+        for(Asset asset : assets){
 
             if(asset.getAssetType().equals(s)){
                 return true;
@@ -42,9 +42,9 @@ public class AssetsManager {
 
     }
 
-    public Assets getAssetsFromAssetsType(AssetType s){
+    public Asset getAssetsFromAssetsType(AssetType s){
 
-        for(Assets asset : assets){
+        for(Asset asset : assets){
 
             if(asset.getAssetType().equals(s)){
                 return asset;

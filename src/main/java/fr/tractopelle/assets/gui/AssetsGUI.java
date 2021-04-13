@@ -21,7 +21,6 @@ public class AssetsGUI {
 
     public void openGUI(Player player) {
 
-
         i = 1;
 
         int size = corePlugin.getConfiguration().getInt("ASSETS-GUI.INVENTORY-SIZE");

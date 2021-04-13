@@ -1,9 +1,7 @@
-package fr.tractopelle.assets.commands;
+package fr.tractopelle.assets.commands.command;
 
 import fr.tractopelle.assets.CorePlugin;
-import fr.tractopelle.assets.utils.AssetType;
-import fr.tractopelle.assets.utils.command.ACommand;
-import org.bukkit.Bukkit;
+import fr.tractopelle.assets.commands.ACommand;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 

@@ -1,9 +1,9 @@
-package fr.tractopelle.assets.commands;
+package fr.tractopelle.assets.commands.command;
 
 import fr.tractopelle.assets.CorePlugin;
-import fr.tractopelle.assets.data.Assets;
-import fr.tractopelle.assets.utils.AssetType;
-import fr.tractopelle.assets.utils.command.ACommand;
+import fr.tractopelle.assets.base.Asset;
+import fr.tractopelle.assets.base.type.AssetType;
+import fr.tractopelle.assets.commands.ACommand;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
 import org.apache.commons.lang.StringUtils;
@@ -66,7 +66,7 @@ public class AssetAdmin extends ACommand {
                     if(corePlugin.getAssetsManager().isAssets(AssetType.getAssetFromString(args[2].toLowerCase(Locale.ROOT)))){
 
                         AssetType assetType = AssetType.getAssetFromString(args[2].toLowerCase(Locale.ROOT));
-                        Assets asset = corePlugin.getAssetsManager().getAssetsFromAssetsType(assetType);
+                        Asset asset = corePlugin.getAssetsManager().getAssetsFromAssetsType(assetType);
 
                         if(!(target.hasPermission(asset.getPermission()))) {
 
@@ -95,7 +95,7 @@ public class AssetAdmin extends ACommand {
                     if(corePlugin.getAssetsManager().isAssets(AssetType.getAssetFromString(args[2].toLowerCase(Locale.ROOT)))){
 
                         AssetType assetType = AssetType.getAssetFromString(args[2].toLowerCase(Locale.ROOT));
-                        Assets asset = corePlugin.getAssetsManager().getAssetsFromAssetsType(assetType);
+                        Asset asset = corePlugin.getAssetsManager().getAssetsFromAssetsType(assetType);
 
                         if((target.hasPermission(asset.getPermission()))) {
 

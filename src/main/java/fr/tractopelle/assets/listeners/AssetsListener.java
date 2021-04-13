@@ -1,7 +1,7 @@
 package fr.tractopelle.assets.listeners;
 
 import fr.tractopelle.assets.CorePlugin;
-import fr.tractopelle.assets.data.Assets;
+import fr.tractopelle.assets.base.Asset;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -11,11 +11,11 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffectType;
 
-public class AtoutsListener implements Listener {
+public class AssetsListener implements Listener {
 
     private CorePlugin corePlugin;
 
-    public AtoutsListener(CorePlugin corePlugin) {
+    public AssetsListener(CorePlugin corePlugin) {
         this.corePlugin = corePlugin;
     }
 
@@ -35,7 +35,7 @@ public class AtoutsListener implements Listener {
             event.setCancelled(true);
             if (!itemStack.hasItemMeta()) return;
 
-            for (Assets asset : corePlugin.getAssetsManager().getAtoutList()) {
+            for (Asset asset : corePlugin.getAssetsManager().getAtoutList()) {
 
                 if (asset.getItemStack().getItemMeta().getDisplayName().equals(itemStack.getItemMeta().getDisplayName())) {
 
