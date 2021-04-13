@@ -21,6 +21,9 @@ ASSET-ACTIVATION: "You have just activated your asset !"
 ASSET-DESACTIVATION: "You have just deactivated your asset !"
 ALREADY-HAVE-ASSET: "This player already has this asset."
 ALREADY-NOT-HAVE-ASSET: "This player does not already have this advantage."
+ADD-ASSET: "You have just add the asset from this player."
+REMOVE-ASSET: "You have just added the asset to this player."
+
 
 ASSETS-GUI:
   INVENTORY-SIZE: 27

@@ -58,6 +58,7 @@ public class AssetAdmin extends ACommand {
 
                             User user = corePlugin.getLuckPerms().getPlayerAdapter(Player.class).getUser(target);
                             addPermission(user, asset.getPermission());
+                            commandSender.sendMessage(prefix + corePlugin.getConfiguration().getString("ADD-ASSET"));
 
                         } else {
 
@@ -86,6 +87,7 @@ public class AssetAdmin extends ACommand {
 
                             User user = corePlugin.getLuckPerms().getPlayerAdapter(Player.class).getUser(target);
                             removePermission(user, asset.getPermission());
+                            commandSender.sendMessage(prefix + corePlugin.getConfiguration().getString("REMOVE-ASSET"));
 
                         } else {
 

@@ -68,6 +68,7 @@ public class CorePlugin extends JavaPlugin {
 
         new AssetCommand(this);
         new AssetAdmin(this);
+
     }
 
     private void registerListeners() {
