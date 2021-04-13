@@ -2,10 +2,12 @@ package fr.tractopelle.assets.listeners;
 
 import fr.tractopelle.assets.CorePlugin;
 import fr.tractopelle.assets.base.Asset;
+import fr.tractopelle.assets.base.type.AssetType;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -41,7 +43,8 @@ public class AssetsListener implements Listener {
 
                     if (player.hasPermission(asset.getPermission())) {
 
-                        addAssets(player, PotionEffectType.getByName(asset.getAssetType().name()), asset.getLevel(), prefix);
+
+                        addAssets(asset, player, PotionEffectType.getByName(asset.getAssetType().name()), asset.getLevel(), prefix);
                         return;
 
                     } else {
@@ -56,7 +59,40 @@ public class AssetsListener implements Listener {
         }
     }
 
-    public void addAssets(Player player, PotionEffectType effectType, int amplifier, String prefix) {
+
+
+    @EventHandler
+    public void onPlayerFall(EntityDamageEvent event){
+
+        if(event.getEntity() instanceof Player && event.getCause() == EntityDamageEvent.DamageCause.FALL){
+
+            Player player = (Player) event.getEntity();
+
+            if(corePlugin.getProfile().getNoFallPlayers().contains(player)) {
+                event.setCancelled(true);
+            }
+        }
+    }
+
+    public void addAssets(Asset asset, Player player, PotionEffectType effectType, int amplifier, String prefix) {
+
+        if(asset.getAssetType().equals(AssetType.NO_FALL)){
+
+            if(corePlugin.getProfile().getNoFallPlayers().contains(player)){
+
+                corePlugin.getProfile().removeNoFallPlayers(player);
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION"));
+                return;
+
+            } else {
+
+                corePlugin.getProfile().addNoFallPlayers(player);
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION"));
+                return;
+
+            }
+
+        }
 
         if (player.hasPotionEffect(effectType)) {
 
@@ -72,5 +108,4 @@ public class AssetsListener implements Listener {
 
         }
     }
-
 }

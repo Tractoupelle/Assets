@@ -24,6 +24,7 @@ public enum AssetType {
     SLOW_DIGGING,
     WATER_BREATHING,
     WEAKNESS,
+    NO_FALL,
     WITHER;
 
 
