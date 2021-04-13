@@ -4,6 +4,8 @@ import fr.tractopelle.assets.CorePlugin;
 import fr.tractopelle.assets.base.Asset;
 import fr.tractopelle.assets.base.type.AssetType;
 import org.bukkit.Material;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -60,25 +62,11 @@ public class AssetsListener implements Listener {
     }
 
 
-
-    @EventHandler
-    public void onPlayerFall(EntityDamageEvent event){
-
-        if(event.getEntity() instanceof Player && event.getCause() == EntityDamageEvent.DamageCause.FALL){
-
-            Player player = (Player) event.getEntity();
-
-            if(corePlugin.getProfile().getNoFallPlayers().contains(player)) {
-                event.setCancelled(true);
-            }
-        }
-    }
-
     public void addAssets(Asset asset, Player player, PotionEffectType effectType, int amplifier, String prefix) {
 
-        if(asset.getAssetType().equals(AssetType.NO_FALL)){
+        if (asset.getAssetType().equals(AssetType.NO_FALL)) {
 
-            if(corePlugin.getProfile().getNoFallPlayers().contains(player)){
+            if (corePlugin.getProfile().getNoFallPlayers().contains(player)) {
 
                 corePlugin.getProfile().removeNoFallPlayers(player);
                 player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION"));
@@ -87,6 +75,22 @@ public class AssetsListener implements Listener {
             } else {
 
                 corePlugin.getProfile().addNoFallPlayers(player);
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION"));
+                return;
+
+            }
+
+        } else if (asset.getAssetType().equals(AssetType.NO_DEBUFF)) {
+
+            if (corePlugin.getProfile().getNoDebuffPlayers().contains(player)) {
+
+                corePlugin.getProfile().removeNoDebuffPlayers(player);
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION"));
+                return;
+
+            } else {
+
+                corePlugin.getProfile().addNoDebuffPlayers(player);
                 player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION"));
                 return;
 

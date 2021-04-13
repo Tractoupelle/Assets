@@ -4,6 +4,7 @@ import fr.tractopelle.assets.base.Profile;
 import fr.tractopelle.assets.commands.command.AssetAdmin;
 import fr.tractopelle.assets.commands.command.AssetCommand;
 import fr.tractopelle.assets.config.Config;
+import fr.tractopelle.assets.listeners.PlayerListener;
 import fr.tractopelle.assets.manager.AssetsManager;
 import fr.tractopelle.assets.gui.AssetsGUI;
 import fr.tractopelle.assets.listeners.AssetsListener;
@@ -78,6 +79,7 @@ public class CorePlugin extends JavaPlugin {
     private void registerListeners() {
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new AssetsListener(this), this);
+        pm.registerEvents(new PlayerListener(this), this);
 
     }
 

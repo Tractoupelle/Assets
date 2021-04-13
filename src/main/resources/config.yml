@@ -25,6 +25,9 @@ ALREADY-NOT-HAVE-ASSET: "This player does not already have this advantage."
 ADD-ASSET: "You have just add the asset from this player."
 REMOVE-ASSET: "You have just added the asset to this player."
 
+ASSET-NO-DEBUFF:
+  - POISON
+  - SLOWNESS
 
 ASSETS-GUI:
   INVENTORY-SIZE: 27
@@ -89,30 +92,30 @@ ASSETS-GUI:
         - ""
         - "§6» %chooseLore%"
     3:
-      MATERIAL: BLAZE_POWDER
-      EFFECT: INCREASE_DAMAGE
+      MATERIAL: POTION
+      EFFECT: NO_DEBUFF
       LEVEL: 1
-      PERMISSION: asset.strenght.use
+      PERMISSION: asset.no_debuff.use
       GLOW: true
       SLOT: 14
-      NAME: "§6Asset §8● §eStrenght I"
+      NAME: "§6Asset §8● §eNoDebuff"
       LORE:
         - ""
-        - "§f» §eAllows you to have infinite §fStrenght I§e as long"
+        - "§f» §eAllows you to have infinite §fNoDebuff§e as long"
         - "  §eas the trump is activated."
         - ""
         - "§6» %chooseLore%"
     4:
-      MATERIAL: DIAMOND_CHESTPLATE
-      EFFECT: DAMAGE_RESISTANCE
+      MATERIAL: FEATHER
+      EFFECT: NO_FALL
       LEVEL: 1
-      PERMISSION: asset.resistance.use
+      PERMISSION: asset.nofall.use
       GLOW: true
       SLOT: 16
-      NAME: "§6Asset §8● §eResistance I"
+      NAME: "§6Asset §8● §eNoFall"
       LORE:
         - ""
-        - "§f» §eAllows you to have infinite §fResistance I§e as long"
+        - "§f» §eAllows you to have infinite §fNoFall§e as long"
         - "  §eas the trump is activated."
         - ""
         - "§6» %chooseLore%"

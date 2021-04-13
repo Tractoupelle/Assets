@@ -25,8 +25,8 @@ public enum AssetType {
     WATER_BREATHING,
     WEAKNESS,
     NO_FALL,
+    NO_DEBUFF,
     WITHER;
-
 
     public static boolean isAsset(String asset) {
 
