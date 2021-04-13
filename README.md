@@ -41,6 +41,6 @@
 #### * NO_FALL,
 #### * NO_DEBUFF,
 
-## Hoping that you like the plugin**
+## Hoping that you like the plugin
 
 <a id="raw-url" href="https://github.com/Tractoupelle/Assets/raw/master/Assets-0.0.1.jar">Download the PLUGIN</a>
