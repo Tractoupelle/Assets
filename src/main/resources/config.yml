@@ -10,6 +10,7 @@ USAGE-ADMIN:
   - " §f» §e/assetsadmin : §7Open assets GUI"
   - " §f» §e/assetsadmin add <player> <asset> : §7Add an asset to player"
   - " §f» §e/assetsadmin remove <player> <asset> : §7Remove an asset to player"
+ASSET-LIST: "Available assets : %assets%"
 NO-PERMISSION: "You don't have the permission."
 NOT-PLAYER: "Only player can execute this command."
 NOT-AN-ASSET: "This asset not exist."

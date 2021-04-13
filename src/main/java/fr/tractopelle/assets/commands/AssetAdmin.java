@@ -6,11 +6,16 @@ import fr.tractopelle.assets.utils.AssetType;
 import fr.tractopelle.assets.utils.command.ACommand;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
+import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class AssetAdmin extends ACommand {
 
@@ -27,7 +32,19 @@ public class AssetAdmin extends ACommand {
 
         String prefix = corePlugin.getConfiguration().getString("PREFIX");
 
-        if(args.length != 3){
+        if(args.length == 1 && args[0].equalsIgnoreCase("list")){
+
+            List<String> assetsName = corePlugin.getAssetsManager().getAtoutList().stream()
+                    .map(object -> object.getAssetType().name()).collect(Collectors.toList());
+
+            System.out.println(assetsName.toString());
+
+            commandSender.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-LIST")
+                    .replace("%assets%", StringUtils.join(assetsName, ", ")));
+
+            return false;
+
+        } else if(args.length != 3){
 
             for(String s : corePlugin.getConfiguration().getStringList("USAGE-ADMIN")){
                 commandSender.sendMessage(s);
