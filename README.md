@@ -10,8 +10,8 @@
 #### * /assets : Open assets GUI
 #### * /assetsadmin : Help admin
 #### * /assetsadmin list : Give all assets avaliable from the config.
-#### * /assetsadmin add <player> <asset> : Give asset to the player
-#### * /assetsadmin remove <player> <asset> : Remove asset to the player
+#### * /assetsadmin add player asset : Give asset to the player
+#### * /assetsadmin remove player asset : Remove asset to the player
 
 ## AssetsType : 
 
