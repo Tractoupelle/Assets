@@ -37,9 +37,9 @@
 #### * SLOW_DIGGING,
 #### * WATER_BREATHING,
 #### * WEAKNESS,
-#### * NO_FALL,
 #### * WITHER;
-
+#### * NO_FALL,
+#### * NO_DEBUFF,
 
 **Hoping that you like the plugin**
 
