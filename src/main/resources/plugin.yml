@@ -1,0 +1,11 @@
+name: Assets
+version: ${project.version}
+description: Public Assets plugin.
+author: Tractopelle
+
+main: fr.tractopelle.assets.CorePlugin
+
+commands:
+  assets:
+    aliases: [atouts]
+    description: Main command.

@@ -1,0 +1,103 @@
+##########################################################
+#  Default configuration for Atouts by Tractopelle#4020  #
+##########################################################
+
+PREFIX: "§6Assets §f» §e"
+
+USAGE:  "Usage: /assets"
+NO-PERMISSION: "You don't have the permission."
+NOT-PLAYER: "Only player can execute this command."
+OPENING-GUI: "Opening of the assets menu..."
+ACTIVATE-ASSET: "§e§oLeft click to activate !"
+NOT-HAVE-ASSET: "§cYou don't have this asset !"
+
+ASSETS-GUI:
+  INVENTORY-SIZE: 27
+  INVENTORY-NAME: "§f» §6Assets"
+  GLASS:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+  GLASS-DATA: 1
+  GLASS-NAME: " "
+  ITEMS:
+    1:
+      MATERIAL: MAGMA_CREAM
+      EFFECT: FIRE_RESISTANCE
+      LEVEL: 1
+      PERMISSION: asset.fireresistance.use
+      GLOW: true
+      SLOT: 10
+      NAME: "§6Asset §8● §eFire Resistance I"
+      LORE:
+        - ""
+        - "§f» §eAllows you to have infinite §fFire Resistance I§e as long"
+        - "  §eas the trump is activated."
+        - ""
+        - "§6» %chooseLore%"
+    2:
+      MATERIAL: SUGAR
+      EFFECT: SPEED
+      LEVEL: 2
+      PERMISSION: asset.speed.use
+      GLOW: true
+      SLOT: 12
+      NAME: "§6Asset §8● §eSpeed II"
+      LORE:
+        - ""
+        - "§f» §eAllows you to have infinite §fSpeed II§e as long"
+        - "  §eas the trump is activated."
+        - ""
+        - "§6» %chooseLore%"
+    3:
+      MATERIAL: BLAZE_POWDER
+      EFFECT: INCREASE_DAMAGE
+      LEVEL: 1
+      PERMISSION: asset.strenght.use
+      GLOW: true
+      SLOT: 14
+      NAME: "§6Asset §8● §eStrenght I"
+      LORE:
+        - ""
+        - "§f» §eAllows you to have infinite §fStrenght I§e as long"
+        - "  §eas the trump is activated."
+        - ""
+        - "§6» %chooseLore%"
+    4:
+      MATERIAL: DIAMOND_CHESTPLATE
+      EFFECT: RESISTANCE
+      LEVEL: 1
+      PERMISSION: asset.resistance.use
+      GLOW: true
+      SLOT: 16
+      NAME: "§6Asset §8● §eResistance I"
+      LORE:
+        - ""
+        - "§f» §eAllows you to have infinite §fResistance I§e as long"
+        - "  §eas the trump is activated."
+        - ""
+        - "§6» %chooseLore%"
