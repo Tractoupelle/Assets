@@ -69,13 +69,13 @@ public class AssetsListener implements Listener {
             if (corePlugin.getProfile().getNoFallPlayers().contains(player)) {
 
                 corePlugin.getProfile().removeNoFallPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION"));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION").replace("%asset%", effectType.getName()));
                 return;
 
             } else {
 
                 corePlugin.getProfile().addNoFallPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION"));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION").replace("%asset%", effectType.getName()));
                 return;
 
             }
@@ -85,13 +85,13 @@ public class AssetsListener implements Listener {
             if (corePlugin.getProfile().getNoDebuffPlayers().contains(player)) {
 
                 corePlugin.getProfile().removeNoDebuffPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION"));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION").replace("%asset%", effectType.getName()));
                 return;
 
             } else {
 
                 corePlugin.getProfile().addNoDebuffPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION"));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION").replace("%asset%", effectType.getName()));
                 return;
 
             }
@@ -102,13 +102,13 @@ public class AssetsListener implements Listener {
 
             player.removePotionEffect(effectType);
 
-            player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION"));
+            player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION").replace("%asset%", effectType.getName()));
 
         } else {
 
             player.addPotionEffect(effectType.createEffect(100000000, amplifier - 1));
 
-            player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION"));
+            player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION").replace("%asset%", effectType.getName()));
 
         }
     }
