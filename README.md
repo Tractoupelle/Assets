@@ -8,6 +8,7 @@
 ## Commandes : 
 
 #### * /assets : Open assets GUI
+####    (alliase: /atouts)
 #### * /assetsadmin : Help admin
 #### * /assetsadmin list : Give all assets avaliable from the config.
 #### * /assetsadmin add player asset : Give asset to the player
