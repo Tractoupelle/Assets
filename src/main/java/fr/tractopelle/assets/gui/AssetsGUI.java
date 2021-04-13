@@ -37,8 +37,6 @@ public class AssetsGUI {
         }
 
 
-        System.out.println(corePlugin.getConfiguration().getConfigurationSection("ASSETS-GUI.ITEMS").getKeys(false));
-
         for(String s : corePlugin.getConfiguration().getConfigurationSection("ASSETS-GUI.ITEMS").getKeys(false)){
 
             inventory.setItem(corePlugin.getConfiguration().getInt("ASSETS-GUI.ITEMS." + i + ".SLOT"),

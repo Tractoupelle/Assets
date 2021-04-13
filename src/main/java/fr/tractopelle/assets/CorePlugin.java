@@ -2,6 +2,7 @@ package fr.tractopelle.assets;
 
 import fr.tractopelle.assets.commands.AtoutsCommand;
 import fr.tractopelle.assets.config.Config;
+import fr.tractopelle.assets.data.AssetsManager;
 import fr.tractopelle.assets.gui.AssetsGUI;
 import fr.tractopelle.assets.listeners.AtoutsListener;
 import fr.tractopelle.assets.utils.Logger;
@@ -13,6 +14,7 @@ public class CorePlugin extends JavaPlugin {
 
     private Config configuration;
     private AssetsGUI assetsGUI;
+    private AssetsManager assetsManager;
     private final Logger log = new Logger(this.getDescription().getFullName());
 
     @Override
@@ -50,6 +52,8 @@ public class CorePlugin extends JavaPlugin {
 
         this.assetsGUI = new AssetsGUI(this);
 
+        this.assetsManager = new AssetsManager(this);
+
     }
 
     private void registerCommands() {
@@ -68,5 +72,7 @@ public class CorePlugin extends JavaPlugin {
     }
 
     public AssetsGUI getAtoutsGUI() { return assetsGUI; }
+
+    public AssetsManager getAssetsManager() { return assetsManager; }
 
 }

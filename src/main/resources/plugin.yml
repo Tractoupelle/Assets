@@ -5,6 +5,8 @@ author: Tractopelle
 
 main: fr.tractopelle.assets.CorePlugin
 
+softdepend: [LuckPerms]
+
 commands:
   assets:
     aliases: [atouts]
