@@ -14,3 +14,5 @@
 #### * /assetsadmin remove <player> <asset> : Remove asset to the player
 
 **Hoping that you like the plugin**
+
+<a id="raw-url" href="https://raw.githubusercontent.com/github-username/project/master/filename">Download FILE</a>
