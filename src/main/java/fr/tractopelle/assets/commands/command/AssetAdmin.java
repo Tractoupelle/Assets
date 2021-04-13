@@ -34,8 +34,6 @@ public class AssetAdmin extends ACommand {
             List<String> assetsName = corePlugin.getAssetsManager().getAtoutList().stream()
                     .map(object -> object.getAssetType().name()).collect(Collectors.toList());
 
-            System.out.println(assetsName.toString());
-
             commandSender.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-LIST")
                     .replace("%assets%", StringUtils.join(assetsName, ", ")));
 
