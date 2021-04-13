@@ -69,13 +69,13 @@ public class AssetsListener implements Listener {
             if (corePlugin.getProfile().getNoFallPlayers().contains(player)) {
 
                 corePlugin.getProfile().removeNoFallPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION").replace("%asset%", effectType.getName()));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION").replace("%asset%", AssetType.NO_FALL.name()));
                 return;
 
             } else {
 
                 corePlugin.getProfile().addNoFallPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION").replace("%asset%", effectType.getName()));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION").replace("%asset%",AssetType.NO_FALL.name()));
                 return;
 
             }
@@ -85,13 +85,13 @@ public class AssetsListener implements Listener {
             if (corePlugin.getProfile().getNoDebuffPlayers().contains(player)) {
 
                 corePlugin.getProfile().removeNoDebuffPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION").replace("%asset%", effectType.getName()));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-DESACTIVATION").replace("%asset%", AssetType.NO_DEBUFF.name()));
                 return;
 
             } else {
 
                 corePlugin.getProfile().addNoDebuffPlayers(player);
-                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION").replace("%asset%", effectType.getName()));
+                player.sendMessage(prefix + corePlugin.getConfiguration().getString("ASSET-ACTIVATION").replace("%asset%", AssetType.NO_DEBUFF.name()));
                 return;
 
             }
