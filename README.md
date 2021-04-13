@@ -5,7 +5,8 @@
 
 > This plugin is a simply plugin of **Assets** plugin who can be full configurable in the config.yml
 
-> Commandes : 
+> Commandes : <
+
  /assets : Open assets GUI
  /assetsadmin : Help admin
  /assetsadmin asset list
