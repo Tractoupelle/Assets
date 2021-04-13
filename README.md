@@ -1,7 +1,7 @@
 # Assets
 ## _Simple Assets plugin fully configurablee_
 
-# Develop by Tractopelle#4020
+# Developed by Tractopelle#4020
 
 > This plugin is a simply plugin of **Assets** plugin who can be full configurable in the config.yml
 
