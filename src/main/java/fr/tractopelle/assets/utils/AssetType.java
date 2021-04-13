@@ -1,5 +1,7 @@
 package fr.tractopelle.assets.utils;
 
+import org.bukkit.entity.Player;
+
 public enum AssetType {
 
     ABSORPTION,
@@ -49,6 +51,5 @@ public enum AssetType {
         return null;
 
     }
-
 
 }

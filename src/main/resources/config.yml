@@ -96,7 +96,8 @@ ASSETS-GUI:
         - "§6» %chooseLore%"
     4:
       MATERIAL: DIAMOND_CHESTPLATE
-      EFFECT: RESISTANCE
+      EFFECT: DAMAGE_
+      RESISTANCE
       LEVEL: 1
       PERMISSION: asset.resistance.use
       GLOW: true

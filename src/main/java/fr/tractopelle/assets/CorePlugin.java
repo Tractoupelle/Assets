@@ -2,13 +2,14 @@ package fr.tractopelle.assets;
 
 import fr.tractopelle.assets.commands.AtoutsCommand;
 import fr.tractopelle.assets.config.Config;
-import fr.tractopelle.assets.data.AssetsManager;
+import fr.tractopelle.assets.manager.AssetsManager;
 import fr.tractopelle.assets.gui.AssetsGUI;
 import fr.tractopelle.assets.listeners.AtoutsListener;
 import fr.tractopelle.assets.utils.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.potion.PotionEffectType;
 
 public class CorePlugin extends JavaPlugin {
 
@@ -48,11 +49,14 @@ public class CorePlugin extends JavaPlugin {
         log.info("=======================================", Logger.LogType.SUCCESS);
 
 
-
-
         this.assetsGUI = new AssetsGUI(this);
 
         this.assetsManager = new AssetsManager(this);
+
+
+        System.out.println(assetsManager.getAtoutList());
+
+
 
     }
 
