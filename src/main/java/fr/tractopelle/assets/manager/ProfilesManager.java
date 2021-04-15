@@ -1,16 +1,16 @@
-package fr.tractopelle.assets.base;
+package fr.tractopelle.assets.manager;
 
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Profile {
+public class ProfilesManager {
 
     private final List<Player> noFallPlayers;
     private final List<Player> noDebuffPlayers;
 
-    public Profile() {
+    public ProfilesManager() {
 
         this.noFallPlayers = new ArrayList<>();
         this.noDebuffPlayers = new ArrayList<>();

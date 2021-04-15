@@ -61,7 +61,6 @@ public class AssetsManager {
 
         int i = 1;
 
-
         for (String s : corePlugin.getConfiguration().getConfigurationSection("ASSETS-GUI.ITEMS").getKeys(false)) {
 
             String assetName = corePlugin.getConfiguration().getString("ASSETS-GUI.ITEMS." + i + ".EFFECT");

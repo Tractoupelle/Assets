@@ -1,7 +1,7 @@
 package fr.tractopelle.assets;
 
-import fr.tractopelle.assets.base.Profile;
-import fr.tractopelle.assets.commands.command.AssetAdmin;
+import fr.tractopelle.assets.manager.ProfilesManager;
+import fr.tractopelle.assets.commands.command.AssetAdminCommand;
 import fr.tractopelle.assets.commands.command.AssetCommand;
 import fr.tractopelle.assets.config.Config;
 import fr.tractopelle.assets.listeners.PlayerListener;
@@ -22,7 +22,7 @@ public class CorePlugin extends JavaPlugin {
     private AssetsManager assetsManager;
     private LuckPerms luckPerms;
     private final Logger log = new Logger(this.getDescription().getFullName());
-    private Profile profile;
+    private ProfilesManager profile;
 
     @Override
     public void onEnable() {
@@ -59,7 +59,7 @@ public class CorePlugin extends JavaPlugin {
 
         this.assetsManager = new AssetsManager(this);
 
-        this.profile = new Profile();
+        this.profile = new ProfilesManager();
 
         RegisteredServiceProvider<LuckPerms> provider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
         if (provider != null) {
@@ -72,7 +72,7 @@ public class CorePlugin extends JavaPlugin {
     private void registerCommands() {
 
         new AssetCommand(this);
-        new AssetAdmin(this);
+        new AssetAdminCommand(this);
 
     }
 
@@ -93,6 +93,6 @@ public class CorePlugin extends JavaPlugin {
 
     public LuckPerms getLuckPerms() { return luckPerms; }
 
-    public Profile getProfile() { return profile; }
+    public ProfilesManager getProfile() { return profile; }
 
 }
