@@ -1,5 +1,5 @@
 # Assets
-## _Simple Assets plugin fully configurablee_
+## _Simple Assets plugin fully configurable_
 
 # Developed by Tractopelle#4020
 
@@ -7,7 +7,7 @@
 
 ## Commandes : 
 
-#### * /assets : Open assets GUI
+#### * /assets (alliase: /atouts) : Open assets GUI 
 #### * /assetsadmin : Help admin
 #### * /assetsadmin list : Give all assets avaliable from the config.
 #### * /assetsadmin add player asset : Give asset to the player
@@ -15,32 +15,32 @@
 
 ## AssetsType : 
 
-#### * ABSORPTION,
-#### * BLINDNESS,
-#### * CONFUSION,
-#### * DAMAGE_RESISTANCE,
-#### * FAST_DIGGING,
-#### * FIRE_RESISTANCE,
-#### * HARM,
-#### * HEAL,
-#### * HEALTH_BOOST,
-#### * HUNGER,
-#### * INCREASE_DAMAGE,
-#### * INVISIBILITY,
-#### * JUMP,
-#### * NIGHT_VISION,
-#### * POISON,
-#### * REGENERATION,
-#### * SATURATION,
-#### * SLOW,
-#### * SPEED,
-#### * SLOW_DIGGING,
-#### * WATER_BREATHING,
-#### * WEAKNESS,
-#### * WITHER;
-#### * NO_FALL,
-#### * NO_DEBUFF,
+#### * ABSORPTION
+#### * BLINDNESS
+#### * CONFUSION
+#### * DAMAGE_RESISTANCE
+#### * FAST_DIGGING
+#### * FIRE_RESISTANCE
+#### * HARM
+#### * HEAL
+#### * HEALTH_BOOST
+#### * HUNGER
+#### * INCREASE_DAMAGE
+#### * INVISIBILITY
+#### * JUMP
+#### * NIGHT_VISION
+#### * POISON
+#### * REGENERATION
+#### * SATURATION
+#### * SLOW
+#### * SPEED
+#### * SLOW_DIGGING
+#### * WATER_BREATHING
+#### * WEAKNESS
+#### * WITHER
+#### * NO_FALL
+#### * NO_DEBUFF
 
-## Hoping that you like the plugin**
+## Hoping that you like the plugin
 
 <a id="raw-url" href="https://github.com/Tractoupelle/Assets/raw/master/Assets-0.0.1.jar">Download the PLUGIN</a>
